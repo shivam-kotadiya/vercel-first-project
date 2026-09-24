@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete HTML Form</title>
+</head>
+<body>
+    <style>
+
+
+        .first{
+            background-color: rgb(208, 241, 241);
+            border-style:dotted;
+            border-style: dotted;
+            display:block;
+            font-family: fantasy;
+            font-size: 88;          
+            padding: 20px;
+            gap: 40px;
+            border-style: dotted;
+            color: white;
+            background-color: goldenrod;
+        }
+
+
+        .second{
+            background-color: rgb(167, 224, 13);prefix ;
+            background-image: url(img.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position: top;
+            border-image-slice: fill;
+            border: 10px solid;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+            align-content: center;
+           color: white;
+           background-color:rgb(151, 104, 104) 
+         
+      
+        }
+
+    </style>
+
+<h1>Student Registration Form</h1>
+
+<form>
+    <div class="first">
+
+        <div class="second">
+        <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="100">
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time">
+        <br><br>
+
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website">
+        <br><br>
+
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search">
+
+        
+        </fieldset>
+        </div>
+    </div>
+    <br>
+    <div class="second">
+    <fieldset>
+        <legend>Gender</legend>
+
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Skills</legend>
+
+        <input type="checkbox" id="html" name="skill" value="HTML">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="skill" value="CSS">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="javascript" name="skill" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+
+        <input type="checkbox" id="python" name="skill" value="Python">
+        <label for="python">Python</label>
+    </fieldset>
+
+    <br>
+
+    <label for="course">Select Course:</label>
+
+    <select id="course" name="course">
+        <option value="">Select Course</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="Python">Python</option>
+        <option value="Web Development">Web Development</option>
+    </select>
+
+    <br><br>
+
+    <label for="city">Choose City:</label>
+
+    <input list="cities" id="city" name="city">
+
+    <datalist id="cities">
+        <option value="Ahmedabad">
+        <option value="Rajkot">
+        <option value="Surat">
+        <option value="Vadodara">
+        <option value="Gandhinagar">
+    </datalist>
+
+    <br><br>
+
+    <label for="message">Address / Message:</label>
+    <br>
+
+    <textarea id="message" name="message" rows="5" cols="40"
+    placeholder="Enter your address"></textarea>
+
+    <br><br>
+
+    <label for="photo">Upload Photo:</label>
+    <input type="file" id="photo" name="photo">
+
+    <br><br>
+
+    <label for="color">Choose Favorite Color:</label>
+    <input type="color" id="color" name="color">
+
+    <br><br>
+
+    <label for="rating">Rating:</label>
+    <input type="range" id="rating" name="rating" min="0" max="10">
+
+    <br><br>
+
+    <label for="month">Select Month:</label>
+    <input type="month" id="month" name="month">
+
+    <br><br>
+
+    <label for="week">Select Week:</label>
+    <input type="week" id="week" name="week">
+
+    <br><br>
+
+    <label for="datetime">Date and Time:</label>
+    <input type="datetime-local" id="datetime" name="datetime">
+
+    <br><br>
+
+    <input type="hidden" name="student_id" value="12345">
+
+    <label>Progress:</label>
+    <progress value="70" max="100">70%</progress>
+
+    <br><br>
+
+    <label>Marks:</label>
+    <meter value="8" min="0" max="10">8 out of 10</meter>
+
+    <br><br>
+
+    <input type="submit" value="Submit Form">
+
+    <input type="reset" value="Reset Form">
+
+    <input type="button" value="Normal Button">
+    </div>
+
+</form>
+
+</body>
+</html>
